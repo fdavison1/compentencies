@@ -8,6 +8,10 @@ header {
   background: #999999;
 }
 
+header:hover {
+  border: 3px solid black;
+}
+
 header i {
   font-size: 100px;
   margin-top: 15px;
@@ -17,6 +21,7 @@ header i {
 header > h1 {
   color: white;
   margin: 0;
+  text-decoration: none;
 }
 
 span {
@@ -25,7 +30,7 @@ span {
 
 .done {
   text-decoration-line: line-through;
-  text-decoration-color: red;
+  text-decoration-color: black;
   opacity: .5;
 }
 
@@ -52,4 +57,9 @@ body {
   top: 450px;
   left: 1050px;
   background: blue;
+}
+
+div + h2 {
+  color: red;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
