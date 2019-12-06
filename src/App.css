@@ -35,21 +35,21 @@ body {
 
 #box1 {
   position: relative;
-  top: 10px;
-  left: 10px;
+  top: 50px;
+  left: 30px;
   background: yellow;
 }
 
 #box2 {
   position: absolute;
-  top: 650px;
+  top: 450px;
   left: 725px;
   background: red;
 }
 
 #box3 {
   position: fixed;
-  top: 650px;
+  top: 450px;
   left: 1050px;
   background: blue;
 }

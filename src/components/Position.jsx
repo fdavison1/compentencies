@@ -20,19 +20,15 @@ border: 1px solid black
 height: 100px
 width: 100px`
 
-const Italic = styled.p`
-font-style: italic`
+const Container = styled.div`
+margin-top: 150px`
 
-export default class Basic extends React.Component {
+export default class Position extends React.Component {
     state = {}
 
     render() {
         return (
-            <div>
-
-                Basic.jsx
-                <h2>HTML: script</h2>
-                <Italic>used to style To Do box (Todo.jsx)</Italic>
+            <Container>
 
                 <h2>CSS: position</h2>
                 <BoxField>
@@ -50,7 +46,7 @@ export default class Basic extends React.Component {
                     </BoxContainer>
                 </BoxField>
 
-            </div>
+            </Container>
         )
     }
 }
