@@ -20,13 +20,16 @@ export default class Todo extends React.Component{
                 
                 <h1>To Do:</h1>
                 <ul>
-                    <li><span>HTML</span> script</li>
-                    <li><span>CSS</span> position, selectors</li>
+                    <li className='done'><span>HTML</span> script</li>
+                    <li><mark><span>CSS</span> position</mark></li>
+                    <li><span>CSS</span> selectors</li>
                     <li><span>React-routing</span> match object</li>
                     <li><span>Server-express</span> static</li>
                     <li><span>Middleware</span> request level</li>
                     <li><span>DB</span> patterns - many to many, statements - subqueries</li>
                 </ul>
+                <h2>5 extra compentencies?</h2>
+                <h2>5 level 7 katas??</h2>
 
 
 

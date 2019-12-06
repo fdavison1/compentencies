@@ -2,6 +2,54 @@
   text-align: center;
 }
 
+header {
+  box-sizing: border-box;
+  height: 175px;
+  background: #999999;
+}
+
+header i {
+  font-size: 100px;
+  margin-top: 15px;
+  color: white;
+}
+
+header > h1 {
+  color: white;
+  margin: 0;
+}
+
 span {
   font-weight: bold;
+}
+
+.done {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  opacity: .5;
+}
+
+body {
+  height: 200vh;
+}
+
+#box1 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: yellow;
+}
+
+#box2 {
+  position: absolute;
+  top: 650px;
+  left: 725px;
+  background: red;
+}
+
+#box3 {
+  position: fixed;
+  top: 650px;
+  left: 1050px;
+  background: blue;
 }
