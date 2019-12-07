@@ -47,14 +47,14 @@ body {
 
 #box2 {
   position: absolute;
-  top: 450px;
+  top: 460px;
   left: 725px;
   background: red;
 }
 
 #box3 {
   position: fixed;
-  top: 450px;
+  top: 460px;
   left: 1050px;
   background: blue;
 }

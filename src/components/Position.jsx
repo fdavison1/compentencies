@@ -30,7 +30,7 @@ export default class Position extends React.Component {
         return (
             <Container>
 
-                <h2>CSS: position</h2>
+                <h1>CSS: position</h1>
                 <BoxField>
                     <h4>Position: Relative</h4>
                     <BoxContainer>
