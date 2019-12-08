@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const Italic = styled.p`
+const Italic = styled.li`
 font-style: italic`
 
 const Container = styled.div`
@@ -36,7 +36,7 @@ export default class Todo extends React.Component{
             <div style={style}>
                 
                 
-                <h1>To Do:</h1>
+                <h2>Basic Compentencies:</h2>
                 <ul>
                     <StyledLink to='/position'>
                     <li><span>CSS</span> position</li>
@@ -48,14 +48,20 @@ export default class Todo extends React.Component{
                     <li><span>Middleware</span> request level</li>
                     <li><span>DB</span> patterns - many to many, statements - subqueries</li>
                 </ul>
-                <h2>5 extra compentencies?</h2>
-                <h2>5 level 7 katas??</h2>
             </div>
             <div style={style}>
                 <div></div>
-                <h2>Compentencies done in code:</h2>
+                <h2>Compentencies in code:</h2>
+                <ul>
                 <Italic><span>HTML script tag:</span> Todo.jsx</Italic>
                 <Italic><span>CSS Selectors:</span> App.css</Italic>
+                </ul>
+            </div>
+            <div style={style}>
+                <h2>Bonus Compentencies:</h2>
+            </div>
+            <div style={style}>
+                <h2>5 level 7 katas??</h2>
             </div>
             </Container>
         )

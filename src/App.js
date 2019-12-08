@@ -13,7 +13,7 @@ function App() {
     <div className="App">
         <StyledLink to='/'>
       <header>
-        <i class="fas fa-tasks"></i>
+        <i className="fas fa-tasks"></i>
         <h1>home</h1>
       </header>
         </StyledLink>
