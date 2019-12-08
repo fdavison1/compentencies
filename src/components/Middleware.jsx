@@ -28,7 +28,8 @@ height: 100px`
 export default class Middleware extends React.Component {
     state = {
         isAdmin: false,
-        buttonColor: 'white'
+        buttonColor: 'white',
+        treasureURL: 'http://simpleicon.com/dev/wp-content/uploads/lock-10.png'
     }
 
     isAdmin(){
@@ -41,13 +42,18 @@ export default class Middleware extends React.Component {
     isNotAdmin(){
         this.setState({
             isAdmin: false,
-            buttonColor: 'no'
+            buttonColor: 'no',
+            treasureURL: 'http://simpleicon.com/dev/wp-content/uploads/lock-10.png'
         })
     }
 
     getTreasure(){
         // const admin = this.state.isAdmin
-        axios.post('/api/treasure', [this.state.isAdmin])
+        axios.post('/api/treasure', [this.state.isAdmin]).then( res => {
+            this.setState({
+                treasureURL: res.data
+            })
+        })
     }
 
     render() {
@@ -72,7 +78,7 @@ export default class Middleware extends React.Component {
                         onClick={()=> this.getTreasure()}
                         >View Admin Treasure</Button2>
                         <br/>
-                        <Lock src="http://simpleicon.com/dev/wp-content/uploads/lock-10.png" alt="outline of padlock"/>
+                        <Lock src={this.state.treasureURL} alt="outline of padlock"/>
                     </Div>
                 </FlexParent>
             </div>

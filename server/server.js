@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 //ENDPOINTS
-app.post('/api/treasure', a.getTreasure)
+app.post('/api/treasure', a.adminOnly, a.getTreasure)
 
 //LISTENING
 app.listen(SERVER_PORT, () => console.log(`PORT ${SERVER_PORT} is working`))
