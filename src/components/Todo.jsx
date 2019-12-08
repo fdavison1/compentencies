@@ -16,13 +16,13 @@ color: black
     text-decoration: underline
 }`
 
-export default class Todo extends React.Component{
+export default class Todo extends React.Component {
     state = {
 
     }
 
-    
-    render(){
+
+    render() {
         let style = {
             border: '1px solid red',
             width: '500px',
@@ -30,41 +30,43 @@ export default class Todo extends React.Component{
             textAlign: 'left',
             padding: '20px'
         }
-        return(
+        return (
             <Container>
 
-            <div style={style}>
-                
-                
-                <h2>Basic Compentencies:</h2>
-                <ul>
-                    <StyledLink to='/position'>
-                    <li><span>CSS</span> position</li>
-                    </StyledLink>
-                    <StyledLink to='/matchobject/topics'>
-                    <li><span>React-routing</span> match object</li>
-                    </StyledLink>
-                    <StyledLink to='/staticfiles'>
-                    <li><span>Express</span> static</li>
-                    </StyledLink>
-                    <li><span>Middleware</span> request level</li>
-                    <li><span>DB</span> patterns - many to many, statements - subqueries</li>
-                </ul>
-            </div>
-            <div style={style}>
-                <div></div>
-                <h2>Compentencies in code:</h2>
-                <ul>
-                <Italic><span>HTML script tag:</span> Todo.jsx</Italic>
-                <Italic><span>CSS Selectors:</span> App.css</Italic>
-                </ul>
-            </div>
-            <div style={style}>
-                <h2>Bonus Compentencies:</h2>
-            </div>
-            <div style={style}>
-                <h2>5 level 7 katas??</h2>
-            </div>
+                <div style={style}>
+
+
+                    <h2>Basic Compentencies:</h2>
+                    <ul>
+                        <StyledLink to='/position'>
+                            <li><span>CSS</span> position</li>
+                        </StyledLink>
+                        <StyledLink to='/matchobject/topics'>
+                            <li><span>React-routing</span> match object</li>
+                        </StyledLink>
+                        <StyledLink to='/staticfiles'>
+                            <li><span>Express</span> static</li>
+                        </StyledLink>
+                        <StyledLink to='/middleware'>
+                            <li><span>Middleware</span> request level</li>
+                        </StyledLink>
+                        <li><span>DB</span> patterns - many to many, statements - subqueries</li>
+                    </ul>
+                </div>
+                <div style={style}>
+                    <div></div>
+                    <h2>Compentencies in code:</h2>
+                    <ul>
+                        <Italic><span>HTML script tag:</span> Todo.jsx</Italic>
+                        <Italic><span>CSS Selectors:</span> App.css</Italic>
+                    </ul>
+                </div>
+                <div style={style}>
+                    <h2>Bonus Compentencies:</h2>
+                </div>
+                <div style={style}>
+                    <h2>5 level 7 katas??</h2>
+                </div>
             </Container>
         )
     }

@@ -67,3 +67,12 @@ div + h2 {
 h2 {
   margin: 0;
 }
+
+.no {
+  background: white;
+}
+
+.yes {
+  background: black;
+  color: lightpink;
+}
