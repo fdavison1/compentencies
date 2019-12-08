@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import styled from 'styled-components'
 
 const FlexParent = styled.div`
@@ -7,7 +8,6 @@ justify-content: center`
 
 const Div = styled.div`
 border: 1px solid black
-height: 100px
 margin: 25px
 padding: 25px
 background: lightgray`
@@ -21,6 +21,9 @@ const Button2 = styled.button`
 font-size: 1.5rem
 border-radius: 5px
 margin: 5px`
+
+const Lock = styled.img`
+height: 100px`
 
 export default class Middleware extends React.Component {
     state = {
@@ -42,6 +45,11 @@ export default class Middleware extends React.Component {
         })
     }
 
+    getTreasure(){
+        // const admin = this.state.isAdmin
+        axios.post('/api/treasure', [this.state.isAdmin])
+    }
+
     render() {
 
         return (
@@ -60,7 +68,11 @@ export default class Middleware extends React.Component {
                         >No</Button>
                     </Div>
                     <Div>
-                        <Button2>View Admin Treasure</Button2>
+                        <Button2
+                        onClick={()=> this.getTreasure()}
+                        >View Admin Treasure</Button2>
+                        <br/>
+                        <Lock src="http://simpleicon.com/dev/wp-content/uploads/lock-10.png" alt="outline of padlock"/>
                     </Div>
                 </FlexParent>
             </div>
