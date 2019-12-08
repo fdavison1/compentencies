@@ -41,7 +41,7 @@ export default class Todo extends React.Component{
                     <StyledLink to='/position'>
                     <li><span>CSS</span> position</li>
                     </StyledLink>
-                    <StyledLink to='/matchobject'>
+                    <StyledLink to='/matchobject/topics'>
                     <li><span>React-routing</span> match object</li>
                     </StyledLink>
                     <li><span>Server-express</span> static</li>
