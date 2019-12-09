@@ -18,7 +18,6 @@ export default class Database extends React.Component {
 
     neilBooks(){
         axios.post(`/api/books`, ['Terry Pratchett']).then(res => {
-            console.log(res.data)
             this.setState({
                 books: res.data
             })
@@ -27,7 +26,6 @@ export default class Database extends React.Component {
 
     terryBooks(){
         axios.post(`/api/books`, ['Neil Gaiman']).then(res => {
-            console.log(res.data)
             this.setState({
                 books: res.data
             })
