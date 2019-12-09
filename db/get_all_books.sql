@@ -1,0 +1,1 @@
+SELECT cover FROM books;

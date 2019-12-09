@@ -36,3 +36,23 @@ VALUES (1, 1),
 (2, 2), 
 (1, 3), 
 (1, 4);
+
+--COVERS
+ALTER TABLE books
+ADD COLUMN cover TEXT;
+
+UPDATE books
+SET cover = 'https://www.terrypratchettbooks.com/wp-content/uploads/2019/04/thecarpetpeople-pb.jpg'
+WHERE id = 1;
+
+UPDATE books
+SET cover = 'https://images-na.ssl-images-amazon.com/images/I/51S5cTRZPYL._SX319_BO1,204,203,200_.jpg'
+WHERE id = 2;
+
+UPDATE books
+SET cover = 'https://prodimage.images-bn.com/pimages/9782226432032_p0_v1_s550x406.jpg'
+WHERE id = 3;
+
+UPDATE books
+SET cover = 'https://mythoughtsonthebook.files.wordpress.com/2016/05/stardust.jpg?w=656'
+WHERE id = 4;
