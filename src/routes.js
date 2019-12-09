@@ -6,6 +6,7 @@ import MatchObject from './components/MatchObject'
 import NoMatch from './views/NoMatch'
 import StaticFiles from './components/StaticFiles'
 import Middleware from './components/Middleware'
+import Database from './components/Database'
 
 export default (
     <Switch>
@@ -14,6 +15,7 @@ export default (
         <Route path='/matchobject' component={MatchObject}/>
         <Route path='/staticfiles' component={StaticFiles} />
         <Route path='/middleware' component={Middleware} />
+        <Route path='/database' component={Database} />
         <Route component={NoMatch} />
     </Switch>
 )

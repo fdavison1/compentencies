@@ -50,7 +50,9 @@ export default class Todo extends React.Component {
                         <StyledLink to='/middleware'>
                             <li><span>Middleware</span> request level</li>
                         </StyledLink>
+                        <StyledLink to='/database'>
                         <li><span>DB</span> patterns - many to many, statements - subqueries</li>
+                        </StyledLink>
                     </ul>
                 </div>
                 <div style={style}>

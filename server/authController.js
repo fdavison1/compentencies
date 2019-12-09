@@ -5,7 +5,7 @@ module.exports = {
         }
         return
     },
-    getTreasure: (req, res) => {
-        res.status(200).send('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6IGoQbBGU_NTsUMruUNfgzZKBLbyaURVoA-uM3T9m5lPYWP5-Hg&s')
+    getTreasure: async (req, res) => {
+        await res.status(200).send('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6IGoQbBGU_NTsUMruUNfgzZKBLbyaURVoA-uM3T9m5lPYWP5-Hg&s')
     }
 }
