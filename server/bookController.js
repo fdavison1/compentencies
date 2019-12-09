@@ -6,6 +6,10 @@ module.exports = {
         })
     },
     getBooks: (req, res) => {
-        
+        const db = req.app.get('db')
+        // console.log(req.body[0])
+        db.get_books(req.body[0]).then(result => {
+            res.status(200).send(result)
+        })
     }
 }

@@ -14,7 +14,7 @@ app.use(express.static('public'))
 app.post('/api/treasure', a.adminOnly, a.getTreasure)
 
 app.get('/api/books', b.getAllBooks)
-app.get('/api/books/author', b.getBooks)
+app.post('/api/books', b.getBooks)
 
 //LISTENING
 massive(CONNECTION_STRING).then(databaseConnection => {

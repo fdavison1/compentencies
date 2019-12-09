@@ -1,1 +1,1 @@
-SELECT cover FROM books;
+SELECT * FROM books;
