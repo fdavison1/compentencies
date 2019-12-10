@@ -9,6 +9,7 @@ import Middleware from './components/Middleware'
 import Database from './components/Database'
 
 export default (
+
     <Switch>
         <Route exact path='/' component={Todo}/>
         <Route path='/position' component={Position}/>
