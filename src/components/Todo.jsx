@@ -63,9 +63,6 @@ export default class Todo extends React.Component {
                     </ul>
                 </div>
                 <div style={style}>
-                    <h2>Bonus Compentencies:</h2>
-                </div>
-                <div style={style}>
                     <h2>5 level-7 katas?</h2>
                     <h2>3 level-6 katas?</h2>
                 </div>
